@@ -17,17 +17,20 @@
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.1"
   },
   "scripts": {
     "build": "react-scripts build",
+    "build:development": "env-cmd --file .env.development npm run build",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "npm run format:check && eslint .",
     "start": "react-scripts start",
+    "start:production": "env-cmd --file .env.production npm start",
     "test": "react-scripts test"
   },
   "eslintConfig": {
