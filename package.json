@@ -34,17 +34,6 @@
     "start:production": "env-cmd --file .env.production npm start",
     "test": "react-scripts test"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "airbnb-typescript",
-      "prettier"
-    ],
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
